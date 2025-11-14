@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon einbinden -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon.svg">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon.svg">
+
+    <!-- <script type="module" src="./scripts.js" defer></script> -->
+    <!-- Da type="module" ohnehin schon bewirkt, dass das Script deferred ist,
+        ist defer hier nicht zwingend nötig -->
+    <script type="module" src="./src/main.js" defer></script>
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Fotogram</title>
+</head>
+
+<body id="body">
+
+    <header id="idHeader">
+        <div id="logoArea"></div>
+    </header>
+
+    <main>
+        <section id="idSecTitle">
+            <h1 id="idSecTitleH1" tabindex="-1">My personal photo album</h1>
+        </section>
+
+        <section id="idSecAlbum">
+
+            <dialog id="idDlg" tabindex="0">
+                <header id="idDlgHeader">
+                    <h2 id="idDlgHTitle">
+                        PlaceHolder for image_name
+                    </h2>
+                    <button id="idDlgBtnClose" tabindex="0">
+                        <img src="./assets/img/close_trans_bg.png" alt="close_trans_bg.png">
+                    </button>
+                </header>
+
+                <div id="idDlgImgsContainer">
+                    <!-- <img src="" alt="image"> -->
+                </div>
+
+                <div id="idSteeringArea">
+                    <button id="idDlgBtnGoLeft" tabindex="0">
+                        <img src="./assets/img/arrow.png" alt="arrow.png">
+                    </button>
+                    <div id="idShowPosInfo">
+                        <span id="idImgPos"></span>/<span id="idImgQty"></span>
+                    </div>
+                    <button id="idDlgBtnGoRight" tabindex="0">
+                        <img src="./assets/img/arrow.png" alt="arrow.png">
+                    </button>
+                </div>
+            </dialog>
+
+        </section>
+
+    </main>
+
+    <footer id="idFooter">
+        <div id="da_logoArea"></div>
+        <p>2025 Developer Akademie GmbH</p>
+        <a href="" ></a>
+    </footer>
+
+</body>
+
+</html>
